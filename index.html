@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Free Data & API Catalog</title>
+<meta name="description" content="A curated, health-checked list of free, no-key APIs and datasets for student data projects." />
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<header>
+  <h1>Free Data &amp; API Catalog</h1>
+  <p class="tagline">Free, no-key APIs and datasets worth building a course project on — checked automatically every day so this list doesn't rot.</p>
+</header>
+
+<main>
+  <div class="controls">
+    <input id="search" type="search" placeholder="Search by name, category, or keyword…" autocomplete="off" />
+    <select id="category-filter">
+      <option value="">All categories</option>
+    </select>
+  </div>
+
+  <p id="result-count" class="result-count"></p>
+
+  <div id="entries" class="entries"></div>
+
+  <p id="empty-state" class="empty-state" hidden>No entries match that search.</p>
+</main>
+
+<footer>
+  <p>
+    Know a good free, no-key API or dataset that belongs here? Add an entry to
+    <code>entries.json</code> and open a pull request.
+  </p>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>

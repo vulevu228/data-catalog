@@ -1,0 +1,54 @@
+{
+  "usgs-earthquakes": {
+    "status": "up",
+    "http_status": 200,
+    "response_ms": 1446,
+    "checked_at": "2026-08-25T11:44:42Z"
+  },
+  "noaa-swpc-xray-flares": {
+    "status": "up",
+    "http_status": 200,
+    "response_ms": 513,
+    "checked_at": "2026-08-25T11:44:42Z"
+  },
+  "noaa-swpc-planetary-k-index": {
+    "status": "up",
+    "http_status": 200,
+    "response_ms": 293,
+    "checked_at": "2026-08-25T11:44:42Z"
+  },
+  "gdelt-events-v2": {
+    "status": "up",
+    "http_status": 200,
+    "response_ms": 543,
+    "checked_at": "2026-08-25T11:44:42Z"
+  },
+  "yahoo-finance-yfinance": {
+    "status": "not_checked",
+    "reason": "not a directly-fetchable URL"
+  },
+  "open-meteo": {
+    "status": "up",
+    "http_status": 200,
+    "response_ms": 449,
+    "checked_at": "2026-08-25T11:44:42Z"
+  },
+  "world-bank-indicators": {
+    "status": "up",
+    "http_status": 200,
+    "response_ms": 545,
+    "checked_at": "2026-08-25T11:44:42Z"
+  },
+  "restcountries": {
+    "status": "up",
+    "http_status": 200,
+    "response_ms": 1207,
+    "checked_at": "2026-08-25T11:44:42Z"
+  },
+  "open-notify-iss": {
+    "status": "up",
+    "http_status": 200,
+    "response_ms": 474,
+    "checked_at": "2026-08-25T11:44:42Z"
+  }
+}

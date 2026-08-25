@@ -1,0 +1,40 @@
+name: Catalog Health Check
+
+# Unlike this program's other trackers, this workflow's real trigger stays
+# on: every entry in entries.json is a public endpoint GitHub's runners can
+# actually reach (no localhost Postgres in the way), so the schedule below
+# is the live path, not a dormant placeholder.
+on:
+  schedule:
+    - cron: "0 6 * * *"
+  workflow_dispatch:
+
+jobs:
+  check-entries:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Check every catalog entry
+        run: python scripts/check_health.py
+
+      - name: Commit and push status.json
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add status.json
+          git commit -m "chore: update catalog health status" || echo "No changes to commit"
+          git pull --rebase origin main
+          git push origin main
