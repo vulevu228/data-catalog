@@ -59,7 +59,9 @@ The other 98 are individually documented in [`entries.json`](entries.json) — a
 | `scripts/check_health.py` | Reads `entries.json`, does a live GET against each entry, and writes the result (`up`/`down`, HTTP status, response time) to `status.json`. |
 | `status.json` | Machine-generated, overwritten daily by the workflow. Not meant to be hand-edited. |
 | `.github/workflows/health-check.yml` | Runs `check_health.py` once a day (`workflow_dispatch` also available for an on-demand run) and commits `status.json` back if it changed. |
-| `index.html` / `app.js` / `style.css` | A small dependency-free static site: search box, category filter, and a status badge per entry, reading `entries.json` and `status.json` directly. Deployed via GitHub Pages, no build step. |
+| `index.html` / `app.js` / `style.css` | A small dependency-free static site: search box, category filter, pagination, and a status badge per entry, reading `entries.json` and `status.json` directly. Deployed via GitHub Pages, no build step. |
+
+**Cache-busting:** GitHub Pages serves `app.js`/`style.css` with `Cache-Control: max-age=600`, and browsers are often stickier than that on top — a visitor can sit on a stale cached copy well after a real update goes live. `index.html` loads both as `app.js?v=cb1` / `style.css?v=cb1` for exactly this reason: bump that `cbN` suffix (in `index.html`, both references) any time you change `app.js` or `style.css`, so the new version gets a new URL and can't be served from a stale cache. `entries.json`/`status.json` don't need this — `app.js` already fetches those with `cache: "no-store"`.
 
 ## Adding an entry
 
