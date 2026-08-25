@@ -18,23 +18,38 @@ This is also the first project in this series where the scheduled GitHub Actions
 
 ## The catalog, right now
 
-All entries require **no API key** — that's the one hard filter every source in this list passes. `Verified` means a real pipeline in this program is built on it; `Seed` means it's a well-known free source that hasn't been used here yet, so treat it as a lead to confirm rather than a guarantee. Live up/down status isn't duplicated here since it changes daily — check the [live site](https://vulevu228.github.io/data-catalog/) for that.
+**103 sources**, every one requiring **no API key** — that's the one hard filter every entry has to pass, and it was checked live, not assumed. Building this list meant testing well over a hundred candidate URLs one by one: real HTTP requests against each, discarding anything that came back needing a key, blocked by a firewall, 404'd, or was otherwise too unreliable to hand to a classmate in good conscience. About 20 candidates that looked promising on paper didn't survive that pass (dead endpoints, services that quietly added a key requirement, one 403'd behind a WAF even with a browser User-Agent) — those aren't in `entries.json`, on purpose.
 
-Each source name below links to that provider's own human-readable docs page, not the raw API endpoint — clicking through gets you an explanation, not an unformatted JSON dump. The actual no-key endpoint to call from code is in [`entries.json`](entries.json) (and shown per-entry on the live site).
+`Verified` means a real pipeline in this program is built on it (5 entries, all inherited from `tracking_metals`/`earthquake_tracker`/the space-weather project); `Seed` means it's a well-known free source confirmed working during this pass but not yet load-bearing for a real project here — treat it as a strong lead, not a guarantee. Live up/down status isn't duplicated in this README since it changes daily — check the [live site](https://vulevu228.github.io/data-catalog/) for that, or `status.json` directly.
 
-| Source | Category | Format | Status |
-|---|---|---|---|
-| [USGS Earthquake GeoJSON Feed](https://earthquake.usgs.gov/earthquakes/feed/v1.0/geojson.php) | Geoscience | GeoJSON | Verified — powers `earthquake_tracker` |
-| [NOAA SWPC Solar Flare Events](https://www.swpc.noaa.gov/products/goes-x-ray-flux) | Space Weather | JSON | Verified |
-| [NOAA SWPC Planetary K-index](https://www.swpc.noaa.gov/products/planetary-k-index) | Space Weather | JSON | Verified |
-| [GDELT 2.0 Event Database](https://www.gdeltproject.org/data.html#documentation) | Geopolitics | CSV (zipped) | Verified — powers `tracking_metals` |
-| [Yahoo Finance quotes (via `yfinance`)](https://pypi.org/project/yfinance/) | Finance | Python objects | Verified — powers `tracking_metals` |
-| [Open-Meteo](https://open-meteo.com/en/docs) | Weather | JSON | Seed |
-| [World Bank Open Data API](https://datahelpdesk.worldbank.org/knowledgebase/articles/889392) | Economics | JSON/XML | Seed |
-| [REST Countries](https://restcountries.com/) | Reference Data | JSON | Seed |
-| [Open Notify — ISS Location](http://open-notify.org/Open-Notify-API/) | Reference Data | JSON | Seed |
+| Category | Entries | What's in it |
+|---|---|---|
+| Reference Data | 17 | Geocoding, postal codes, IP lookup, dictionary, color, holidays |
+| Entertainment | 23 | Trivia, jokes, recipes, sports, fictional-universe APIs (good for practicing joins/nested data) |
+| Government | 10 | US/UK/Canada/Singapore/EU official open-data and statistics APIs |
+| Culture & Media | 10 | Museums, libraries, music metadata, Wikipedia/Wikidata |
+| Finance | 7 | FX rates, crypto prices, central bank data |
+| Weather | 7 | Forecast, air quality, tides, grid carbon intensity |
+| Economics | 6 | World Bank, IMF, ECB, OECD, UN Comtrade |
+| Developer Tools | 6 | GitHub, GitLab, npm, PyPI, crates.io |
+| Space Weather | 4 | Solar flares, Kp-index, ISS tracking, sunrise/sunset |
+| Science | 4 | Chemistry, biomedical literature, biodiversity |
+| Health | 3 | COVID-19, FDA adverse events, WHO indicators |
+| Transit | 3 | Bike-share networks, London Underground status, live flights |
+| Geoscience | 2 | Earthquakes, elevation |
+| Geopolitics | 1 | GDELT global event database |
 
-The full record for each entry (auth type, update cadence, exact endpoint, "good for" notes, caveats) is in [`entries.json`](entries.json) — this table is just the human-readable index.
+Five flagship entries — the ones an actual pipeline in this program depends on:
+
+| Source | Category | Format |
+|---|---|---|
+| [USGS Earthquake GeoJSON Feed](https://earthquake.usgs.gov/earthquakes/feed/v1.0/geojson.php) | Geoscience | GeoJSON — powers `earthquake_tracker` |
+| [NOAA SWPC Solar Flare Events](https://www.swpc.noaa.gov/products/goes-x-ray-flux) | Space Weather | JSON |
+| [NOAA SWPC Planetary K-index](https://www.swpc.noaa.gov/products/planetary-k-index) | Space Weather | JSON |
+| [GDELT 2.0 Event Database](https://www.gdeltproject.org/data.html#documentation) | Geopolitics | CSV (zipped) — powers `tracking_metals` |
+| [Yahoo Finance quotes (via `yfinance`)](https://pypi.org/project/yfinance/) | Finance | Python objects — powers `tracking_metals` |
+
+The other 98 are individually documented in [`entries.json`](entries.json) — auth type, update cadence, exact endpoint, a "good for" note, and any caveats worth knowing before you build on it — and browsable/searchable on the [live site](https://vulevu228.github.io/data-catalog/). Each source name links to that provider's own human-readable docs page, not the raw API endpoint — clicking through gets you an explanation, not an unformatted JSON dump; the actual no-key endpoint to call from code is shown separately, both in `entries.json` and per-entry on the live site.
 
 ## How it's put together
 
