@@ -1,6 +1,8 @@
 # 📡 Free Data & API Catalog
 
-A curated, **automatically health-checked** list of free, no-key APIs and datasets worth building a student data project on. Live page: `<GitHub Pages URL, once published>`.
+A curated, **automatically health-checked** list of free, no-key APIs and datasets worth building a student data project on.
+
+**Live, searchable site: https://vulevu228.github.io/data-catalog/**
 
 ## Why this exists
 
@@ -13,6 +15,24 @@ It isn't a list of links copy-pasted from somewhere else. Every entry is either 
 Most curated API lists rot — a third of the links are dead or now require a key within a year. This one doesn't get to, because `.github/workflows/health-check.yml` actually runs on a real schedule (once a day) and pings every entry, writing the result to `status.json`. The site badges each entry "live" or "unreachable" based on that file, not on whoever's memory of whether it still works.
 
 This is also the first project in this series where the scheduled GitHub Actions workflow is the *live* path rather than a dormant placeholder — `tracking_metals` and `earthquake_tracker` both write to a local Postgres database that GitHub's cloud runners can't reach, so their workflows sit disabled. This project has no local database at all — everything it checks is a public URL — so the cloud schedule just works.
+
+## The catalog, right now
+
+All entries require **no API key** — that's the one hard filter every source in this list passes. `Verified` means a real pipeline in this program is built on it; `Seed` means it's a well-known free source that hasn't been used here yet, so treat it as a lead to confirm rather than a guarantee. Live up/down status isn't duplicated here since it changes daily — check the [live site](https://vulevu228.github.io/data-catalog/) for that.
+
+| Source | Category | Format | Status |
+|---|---|---|---|
+| [USGS Earthquake GeoJSON Feed](https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_month.geojson) | Geoscience | GeoJSON | Verified — powers `earthquake_tracker` |
+| [NOAA SWPC Solar Flare Events](https://services.swpc.noaa.gov/json/goes/primary/xray-flares-7-day.json) | Space Weather | JSON | Verified |
+| [NOAA SWPC Planetary K-index](https://services.swpc.noaa.gov/products/noaa-planetary-k-index.json) | Space Weather | JSON | Verified |
+| [GDELT 2.0 Event Database](https://www.gdeltproject.org/data.html#documentation) | Geopolitics | CSV (zipped) | Verified — powers `tracking_metals` |
+| [Yahoo Finance quotes (via `yfinance`)](https://pypi.org/project/yfinance/) | Finance | Python objects | Verified — powers `tracking_metals` |
+| [Open-Meteo](https://open-meteo.com/en/docs) | Weather | JSON | Seed |
+| [World Bank Open Data API](https://datahelpdesk.worldbank.org/knowledgebase/articles/889392) | Economics | JSON/XML | Seed |
+| [REST Countries](https://restcountries.com/) | Reference Data | JSON | Seed |
+| [Open Notify — ISS Location](http://open-notify.org/Open-Notify-API/) | Reference Data | JSON | Seed |
+
+The full record for each entry (auth type, update cadence, exact endpoint, "good for" notes, caveats) is in [`entries.json`](entries.json) — this table is just the human-readable index.
 
 ## How it's put together
 
@@ -55,6 +75,6 @@ python scripts/check_health.py
 
 Writes/overwrites `status.json` in the repo root — the same file the live site reads.
 
-## Publishing the site
+## How the site is published
 
-The static site (`index.html`, `app.js`, `style.css`, `entries.json`, `status.json`) is plain files with no build step — GitHub Pages can serve straight from the repo root on `main` (Settings → Pages → Deploy from a branch → `main` / `/root`). Not yet enabled on this repo; that's a one-time manual step once this is pushed and reviewed.
+Live at **https://vulevu228.github.io/data-catalog/**, served directly by GitHub Pages from the repo root on `main` — no build step, no static site generator. If you're forking this for your own program: enable it once under Settings → Pages → Deploy from a branch → `main` / `/root`, and it stays live automatically after that; every push to `main` (including the daily bot commit to `status.json`) redeploys it within a minute or two.
