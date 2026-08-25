@@ -2,26 +2,26 @@
   "usgs-earthquakes": {
     "status": "up",
     "http_status": 200,
-    "response_ms": 113,
-    "checked_at": "2026-08-25T12:06:30Z"
+    "response_ms": 402,
+    "checked_at": "2026-08-25T12:09:30Z"
   },
   "noaa-swpc-xray-flares": {
     "status": "up",
     "http_status": 200,
-    "response_ms": 223,
-    "checked_at": "2026-08-25T12:06:30Z"
+    "response_ms": 445,
+    "checked_at": "2026-08-25T12:09:30Z"
   },
   "noaa-swpc-planetary-k-index": {
     "status": "up",
     "http_status": 200,
-    "response_ms": 31,
-    "checked_at": "2026-08-25T12:06:30Z"
+    "response_ms": 273,
+    "checked_at": "2026-08-25T12:09:30Z"
   },
   "gdelt-events-v2": {
     "status": "up",
     "http_status": 200,
-    "response_ms": 72,
-    "checked_at": "2026-08-25T12:06:30Z"
+    "response_ms": 533,
+    "checked_at": "2026-08-25T12:09:30Z"
   },
   "yahoo-finance-yfinance": {
     "status": "not_checked",
@@ -30,25 +30,26 @@
   "open-meteo": {
     "status": "up",
     "http_status": 200,
-    "response_ms": 391,
-    "checked_at": "2026-08-25T12:06:30Z"
+    "response_ms": 414,
+    "checked_at": "2026-08-25T12:09:30Z"
   },
   "world-bank-indicators": {
     "status": "up",
     "http_status": 200,
-    "response_ms": 102,
-    "checked_at": "2026-08-25T12:06:30Z"
+    "response_ms": 427,
+    "checked_at": "2026-08-25T12:09:30Z"
   },
   "restcountries": {
     "status": "up",
     "http_status": 200,
-    "response_ms": 114,
-    "checked_at": "2026-08-25T12:06:30Z"
+    "response_ms": 917,
+    "checked_at": "2026-08-25T12:09:30Z"
   },
   "open-notify-iss": {
-    "status": "up",
-    "http_status": 200,
-    "response_ms": 390,
-    "checked_at": "2026-08-25T12:06:30Z"
+    "status": "down",
+    "http_status": null,
+    "response_ms": null,
+    "error": "HTTPConnectionPool(host='api.open-notify.org', port=80): Max retries exceeded with url: /iss-now.json (Caused by ConnectTimeoutError(<HTTPConnection(host='api.open-notify.org', port=80) at 0x189ae381f",
+    "checked_at": "2026-08-25T12:09:30Z"
   }
 }

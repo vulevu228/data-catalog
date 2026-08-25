@@ -17,6 +17,13 @@ STATUS_FILE = BASE_DIR / "status.json"
 # reported as a false pass or fail.
 SKIP_IDS = {"yahoo-finance-yfinance"}
 
+# Identifies this traffic as a once-a-day catalog health check (not
+# anonymous scraping) to anyone who looks at their access logs, with a
+# link back to the source instead of leaving them to guess.
+HEADERS = {
+    "User-Agent": "data-catalog-health-check/1.0 (+https://github.com/vulevu228/data-catalog; daily automated availability check, one request per entry)"
+}
+
 
 def resolve_check_url(entry):
     if entry["id"] == "gdelt-events-v2":
@@ -32,7 +39,7 @@ def check_one(entry):
     try:
         # stream=True so a large payload (e.g. GDELT's zip) isn't pulled
         # fully into memory just to confirm the endpoint is alive.
-        response = requests.get(url, timeout=15, stream=True)
+        response = requests.get(url, timeout=15, stream=True, headers=HEADERS)
         elapsed_ms = round((time.monotonic() - started) * 1000)
         response.close()
         ok = response.status_code < 400
