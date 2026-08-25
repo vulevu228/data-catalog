@@ -6,7 +6,7 @@ A curated, **automatically health-checked** list of free, no-key APIs and datase
 
 ## Why this exists
 
-Every course project that needs live data starts the same way: someone spends an hour hunting for a free API that doesn't need a paid key, doesn't die three weeks later, and actually returns something usable. This program has already been through that search four times over ([`tracking_metals`](../tracking_metals), [`earthquake_tracker`](../earthquake_tracker), and a space-weather project) — this catalog turns that search into something reusable by anyone else in the program, instead of every classmate repeating it from scratch.
+Every course project that needs live data starts the same way: someone spends an hour hunting for a free API that doesn't need a paid key, doesn't die three weeks later, and actually returns something usable. This program has already been through that search four times over ([`tracking_metals`](../tracking_metals), [`earthquake_tracker`](../earthquake_tracker), and a space-weather project - live project) — this catalog turns that search into something reusable by anyone else in the program, instead of every classmate repeating it from scratch.
 
 It isn't a list of links copy-pasted from somewhere else. Every entry is either something a real pipeline in this program is actually built on, or a well-known, genuinely free (no signup-then-paywall) source flagged clearly as unverified until someone actually builds on it.
 
