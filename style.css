@@ -160,6 +160,15 @@ main {
   font-size: 0.87rem;
 }
 
+.entry-endpoint {
+  margin: 0.5rem 0 0;
+  font-size: 0.82rem;
+}
+
+.entry-endpoint code {
+  word-break: break-all;
+}
+
 .entry-provenance {
   margin: 0.5rem 0 0;
   font-size: 0.78rem;

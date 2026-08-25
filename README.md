@@ -20,11 +20,13 @@ This is also the first project in this series where the scheduled GitHub Actions
 
 All entries require **no API key** — that's the one hard filter every source in this list passes. `Verified` means a real pipeline in this program is built on it; `Seed` means it's a well-known free source that hasn't been used here yet, so treat it as a lead to confirm rather than a guarantee. Live up/down status isn't duplicated here since it changes daily — check the [live site](https://vulevu228.github.io/data-catalog/) for that.
 
+Each source name below links to that provider's own human-readable docs page, not the raw API endpoint — clicking through gets you an explanation, not an unformatted JSON dump. The actual no-key endpoint to call from code is in [`entries.json`](entries.json) (and shown per-entry on the live site).
+
 | Source | Category | Format | Status |
 |---|---|---|---|
-| [USGS Earthquake GeoJSON Feed](https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_month.geojson) | Geoscience | GeoJSON | Verified — powers `earthquake_tracker` |
-| [NOAA SWPC Solar Flare Events](https://services.swpc.noaa.gov/json/goes/primary/xray-flares-7-day.json) | Space Weather | JSON | Verified |
-| [NOAA SWPC Planetary K-index](https://services.swpc.noaa.gov/products/noaa-planetary-k-index.json) | Space Weather | JSON | Verified |
+| [USGS Earthquake GeoJSON Feed](https://earthquake.usgs.gov/earthquakes/feed/v1.0/geojson.php) | Geoscience | GeoJSON | Verified — powers `earthquake_tracker` |
+| [NOAA SWPC Solar Flare Events](https://www.swpc.noaa.gov/products/goes-x-ray-flux) | Space Weather | JSON | Verified |
+| [NOAA SWPC Planetary K-index](https://www.swpc.noaa.gov/products/planetary-k-index) | Space Weather | JSON | Verified |
 | [GDELT 2.0 Event Database](https://www.gdeltproject.org/data.html#documentation) | Geopolitics | CSV (zipped) | Verified — powers `tracking_metals` |
 | [Yahoo Finance quotes (via `yfinance`)](https://pypi.org/project/yfinance/) | Finance | Python objects | Verified — powers `tracking_metals` |
 | [Open-Meteo](https://open-meteo.com/en/docs) | Weather | JSON | Seed |

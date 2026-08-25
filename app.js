@@ -36,7 +36,7 @@ function entryCard(entry, status) {
 
   el.innerHTML = `
     <div class="entry-head">
-      <h2 class="entry-name"><a href="${entry.url}" target="_blank" rel="noopener">${entry.name}</a></h2>
+      <h2 class="entry-name"><a href="${entry.docs_url}" target="_blank" rel="noopener">${entry.name}</a></h2>
       <div class="badges">
         <span class="badge category">${entry.category}</span>
         <span class="badge">${entry.auth === "none" ? "no key" : entry.auth}</span>
@@ -44,6 +44,7 @@ function entryCard(entry, status) {
       </div>
     </div>
     <p class="entry-meta"><strong>Format:</strong> ${entry.format} &nbsp;·&nbsp; <strong>Updates:</strong> ${entry.update_cadence}</p>
+    ${entry.url !== entry.docs_url ? `<p class="entry-endpoint"><strong>API endpoint (no key needed):</strong> <a href="${entry.url}" target="_blank" rel="noopener"><code>${entry.url}</code></a></p>` : ""}
     <p class="entry-notes"><strong>Good for:</strong> ${entry.good_for}</p>
     ${entry.notes ? `<p class="entry-notes">${entry.notes}</p>` : ""}
     <p class="entry-provenance">${entry.provenance}</p>
