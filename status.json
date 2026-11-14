@@ -2,618 +2,617 @@
   "usgs-earthquakes": {
     "status": "up",
     "http_status": 200,
-    "response_ms": 97,
-    "checked_at": "2026-11-13T13:45:58Z"
+    "response_ms": 792,
+    "checked_at": "2026-11-14T12:50:06Z"
   },
   "noaa-swpc-xray-flares": {
     "status": "up",
     "http_status": 200,
-    "response_ms": 134,
-    "checked_at": "2026-11-13T13:45:58Z"
+    "response_ms": 132,
+    "checked_at": "2026-11-14T12:50:06Z"
   },
   "noaa-swpc-planetary-k-index": {
     "status": "up",
     "http_status": 200,
-    "response_ms": 39,
-    "checked_at": "2026-11-13T13:45:58Z"
+    "response_ms": 14,
+    "checked_at": "2026-11-14T12:50:06Z"
   },
   "gdelt-events-v2": {
     "status": "up",
     "http_status": 200,
-    "response_ms": 301,
-    "checked_at": "2026-11-13T13:45:58Z"
+    "response_ms": 84,
+    "checked_at": "2026-11-14T12:50:06Z"
   },
   "yahoo-finance-yfinance": {
     "status": "not_checked",
     "reason": "not a directly-fetchable URL"
   },
   "open-meteo": {
-    "status": "down",
-    "http_status": null,
-    "response_ms": null,
-    "error": "HTTPSConnectionPool(host='api.open-meteo.com', port=443): Read timed out. (read timeout=15)",
-    "checked_at": "2026-11-13T13:45:58Z"
+    "status": "up",
+    "http_status": 200,
+    "response_ms": 114,
+    "checked_at": "2026-11-14T12:50:06Z"
   },
   "world-bank-indicators": {
     "status": "up",
     "http_status": 200,
-    "response_ms": 141,
-    "checked_at": "2026-11-13T13:45:58Z"
+    "response_ms": 195,
+    "checked_at": "2026-11-14T12:50:06Z"
   },
   "restcountries": {
     "status": "up",
     "http_status": 200,
-    "response_ms": 226,
-    "checked_at": "2026-11-13T13:45:58Z"
+    "response_ms": 233,
+    "checked_at": "2026-11-14T12:50:06Z"
   },
   "open-notify-iss": {
     "status": "up",
     "http_status": 200,
-    "response_ms": 80,
-    "checked_at": "2026-11-13T13:45:58Z"
+    "response_ms": 1126,
+    "checked_at": "2026-11-14T12:50:06Z"
   },
   "usgs-water-services": {
     "status": "up",
     "http_status": 200,
-    "response_ms": 245,
-    "checked_at": "2026-11-13T13:45:58Z"
+    "response_ms": 359,
+    "checked_at": "2026-11-14T12:50:06Z"
   },
   "usaspending": {
     "status": "up",
     "http_status": 200,
-    "response_ms": 220,
-    "checked_at": "2026-11-13T13:45:58Z"
+    "response_ms": 322,
+    "checked_at": "2026-11-14T12:50:06Z"
   },
   "federal-register": {
     "status": "up",
     "http_status": 200,
-    "response_ms": 281,
-    "checked_at": "2026-11-13T13:45:58Z"
+    "response_ms": 219,
+    "checked_at": "2026-11-14T12:50:06Z"
   },
   "uk-police-data": {
     "status": "up",
     "http_status": 200,
-    "response_ms": 1697,
-    "checked_at": "2026-11-13T13:45:58Z"
+    "response_ms": 771,
+    "checked_at": "2026-11-14T12:50:06Z"
   },
   "census-geocoder": {
     "status": "up",
     "http_status": 200,
-    "response_ms": 469,
-    "checked_at": "2026-11-13T13:45:58Z"
+    "response_ms": 425,
+    "checked_at": "2026-11-14T12:50:06Z"
   },
   "uk-bank-holidays": {
     "status": "up",
     "http_status": 200,
-    "response_ms": 155,
-    "checked_at": "2026-11-13T13:45:58Z"
+    "response_ms": 1158,
+    "checked_at": "2026-11-14T12:50:06Z"
   },
   "eurostat": {
     "status": "up",
     "http_status": 200,
-    "response_ms": 597,
-    "checked_at": "2026-11-13T13:45:58Z"
+    "response_ms": 521,
+    "checked_at": "2026-11-14T12:50:06Z"
   },
   "worldbank-countries": {
     "status": "up",
     "http_status": 200,
-    "response_ms": 80,
-    "checked_at": "2026-11-13T13:45:58Z"
+    "response_ms": 69,
+    "checked_at": "2026-11-14T12:50:06Z"
   },
   "imf-datamapper": {
     "status": "up",
     "http_status": 200,
-    "response_ms": 837,
-    "checked_at": "2026-11-13T13:45:58Z"
+    "response_ms": 1768,
+    "checked_at": "2026-11-14T12:50:06Z"
   },
   "ecb-fx": {
     "status": "up",
     "http_status": 200,
-    "response_ms": 641,
-    "checked_at": "2026-11-13T13:45:58Z"
+    "response_ms": 5615,
+    "checked_at": "2026-11-14T12:50:06Z"
   },
   "oecd-stats": {
     "status": "up",
     "http_status": 200,
-    "response_ms": 1303,
-    "checked_at": "2026-11-13T13:45:58Z"
+    "response_ms": 561,
+    "checked_at": "2026-11-14T12:50:06Z"
   },
   "un-comtrade": {
     "status": "up",
     "http_status": 200,
-    "response_ms": 659,
-    "checked_at": "2026-11-13T13:45:58Z"
+    "response_ms": 778,
+    "checked_at": "2026-11-14T12:50:06Z"
   },
   "frankfurter": {
     "status": "up",
     "http_status": 200,
-    "response_ms": 269,
-    "checked_at": "2026-11-13T13:45:58Z"
+    "response_ms": 262,
+    "checked_at": "2026-11-14T12:50:06Z"
   },
   "coingecko-simple-price": {
     "status": "up",
     "http_status": 200,
-    "response_ms": 95,
-    "checked_at": "2026-11-13T13:45:58Z"
+    "response_ms": 68,
+    "checked_at": "2026-11-14T12:50:06Z"
   },
   "exchangerate-host": {
     "status": "up",
     "http_status": 200,
-    "response_ms": 318,
-    "checked_at": "2026-11-13T13:45:58Z"
+    "response_ms": 521,
+    "checked_at": "2026-11-14T12:50:06Z"
   },
   "bank-of-canada-valet": {
     "status": "up",
     "http_status": 200,
-    "response_ms": 106,
-    "checked_at": "2026-11-13T13:45:58Z"
+    "response_ms": 71,
+    "checked_at": "2026-11-14T12:50:06Z"
   },
   "treasury-fiscal-data": {
     "status": "up",
     "http_status": 200,
-    "response_ms": 638,
-    "checked_at": "2026-11-13T13:45:58Z"
+    "response_ms": 535,
+    "checked_at": "2026-11-14T12:50:06Z"
   },
   "fawazahmed0-currency-api": {
     "status": "up",
     "http_status": 200,
-    "response_ms": 61,
-    "checked_at": "2026-11-13T13:45:58Z"
+    "response_ms": 60,
+    "checked_at": "2026-11-14T12:50:06Z"
   },
   "zippopotamus": {
     "status": "up",
     "http_status": 200,
-    "response_ms": 74,
-    "checked_at": "2026-11-13T13:45:58Z"
+    "response_ms": 94,
+    "checked_at": "2026-11-14T12:50:06Z"
   },
   "osm-nominatim": {
     "status": "up",
     "http_status": 200,
-    "response_ms": 35,
-    "checked_at": "2026-11-13T13:45:58Z"
+    "response_ms": 65,
+    "checked_at": "2026-11-14T12:50:06Z"
   },
   "ip-api": {
     "status": "up",
     "http_status": 200,
-    "response_ms": 135,
-    "checked_at": "2026-11-13T13:45:58Z"
+    "response_ms": 46,
+    "checked_at": "2026-11-14T12:50:06Z"
   },
   "overpass-api": {
     "status": "down",
     "http_status": 502,
-    "response_ms": 732,
-    "checked_at": "2026-11-13T13:45:58Z"
+    "response_ms": 678,
+    "checked_at": "2026-11-14T12:50:06Z"
   },
   "countries-now": {
     "status": "up",
     "http_status": 200,
-    "response_ms": 218,
-    "checked_at": "2026-11-13T13:45:58Z"
+    "response_ms": 214,
+    "checked_at": "2026-11-14T12:50:06Z"
   },
   "open-meteo-air-quality": {
     "status": "up",
     "http_status": 200,
-    "response_ms": 610,
-    "checked_at": "2026-11-13T13:45:58Z"
+    "response_ms": 581,
+    "checked_at": "2026-11-14T12:50:06Z"
   },
   "nws-api": {
     "status": "up",
     "http_status": 200,
-    "response_ms": 98,
-    "checked_at": "2026-11-13T13:45:58Z"
+    "response_ms": 65,
+    "checked_at": "2026-11-14T12:50:06Z"
   },
   "nws-alerts": {
     "status": "up",
     "http_status": 200,
-    "response_ms": 196,
-    "checked_at": "2026-11-13T13:45:58Z"
+    "response_ms": 112,
+    "checked_at": "2026-11-14T12:50:06Z"
   },
   "met-norway": {
     "status": "up",
     "http_status": 200,
-    "response_ms": 781,
-    "checked_at": "2026-11-13T13:45:58Z"
+    "response_ms": 584,
+    "checked_at": "2026-11-14T12:50:06Z"
   },
   "uk-carbon-intensity": {
     "status": "up",
     "http_status": 200,
-    "response_ms": 683,
-    "checked_at": "2026-11-13T13:45:58Z"
+    "response_ms": 786,
+    "checked_at": "2026-11-14T12:50:06Z"
   },
   "noaa-tides-currents": {
     "status": "up",
     "http_status": 200,
-    "response_ms": 435,
-    "checked_at": "2026-11-13T13:45:58Z"
+    "response_ms": 356,
+    "checked_at": "2026-11-14T12:50:06Z"
   },
   "wheretheiss": {
     "status": "up",
     "http_status": 200,
-    "response_ms": 2772,
-    "checked_at": "2026-11-13T13:45:58Z"
+    "response_ms": 711,
+    "checked_at": "2026-11-14T12:50:06Z"
   },
   "sunrise-sunset": {
     "status": "up",
     "http_status": 200,
-    "response_ms": 319,
-    "checked_at": "2026-11-13T13:45:58Z"
+    "response_ms": 137,
+    "checked_at": "2026-11-14T12:50:06Z"
   },
   "open-notify-astros": {
     "status": "up",
     "http_status": 200,
-    "response_ms": 304,
-    "checked_at": "2026-11-13T13:45:58Z"
+    "response_ms": 38,
+    "checked_at": "2026-11-14T12:50:06Z"
   },
   "disease-sh": {
     "status": "up",
     "http_status": 200,
-    "response_ms": 893,
-    "checked_at": "2026-11-13T13:45:58Z"
+    "response_ms": 250,
+    "checked_at": "2026-11-14T12:50:06Z"
   },
   "openfda-drug-event": {
     "status": "up",
     "http_status": 200,
-    "response_ms": 3325,
-    "checked_at": "2026-11-13T13:45:58Z"
+    "response_ms": 2359,
+    "checked_at": "2026-11-14T12:50:06Z"
   },
   "who-gho": {
     "status": "up",
     "http_status": 200,
-    "response_ms": 769,
-    "checked_at": "2026-11-13T13:45:58Z"
+    "response_ms": 963,
+    "checked_at": "2026-11-14T12:50:06Z"
   },
   "pubchem": {
     "status": "up",
     "http_status": 200,
-    "response_ms": 224,
-    "checked_at": "2026-11-13T13:45:58Z"
+    "response_ms": 325,
+    "checked_at": "2026-11-14T12:50:06Z"
   },
   "ncbi-eutils": {
     "status": "up",
     "http_status": 200,
-    "response_ms": 287,
-    "checked_at": "2026-11-13T13:45:58Z"
+    "response_ms": 380,
+    "checked_at": "2026-11-14T12:50:06Z"
   },
   "gbif": {
     "status": "up",
     "http_status": 200,
-    "response_ms": 1664,
-    "checked_at": "2026-11-13T13:45:58Z"
+    "response_ms": 1584,
+    "checked_at": "2026-11-14T12:50:06Z"
   },
   "inaturalist": {
     "status": "up",
     "http_status": 200,
-    "response_ms": 1338,
-    "checked_at": "2026-11-13T13:45:58Z"
+    "response_ms": 1405,
+    "checked_at": "2026-11-14T12:50:06Z"
   },
   "usgs-elevation": {
     "status": "up",
     "http_status": 200,
-    "response_ms": 304,
-    "checked_at": "2026-11-13T13:45:58Z"
+    "response_ms": 7304,
+    "checked_at": "2026-11-14T12:50:06Z"
   },
   "jsonplaceholder": {
     "status": "up",
     "http_status": 200,
-    "response_ms": 50,
-    "checked_at": "2026-11-13T13:45:58Z"
+    "response_ms": 114,
+    "checked_at": "2026-11-14T12:50:06Z"
   },
   "pokeapi": {
     "status": "up",
     "http_status": 200,
-    "response_ms": 77,
-    "checked_at": "2026-11-13T13:45:58Z"
+    "response_ms": 85,
+    "checked_at": "2026-11-14T12:50:06Z"
   },
   "thecatapi": {
     "status": "up",
     "http_status": 200,
-    "response_ms": 210,
-    "checked_at": "2026-11-13T13:45:58Z"
+    "response_ms": 172,
+    "checked_at": "2026-11-14T12:50:06Z"
   },
   "dogapi": {
     "status": "up",
     "http_status": 200,
-    "response_ms": 241,
-    "checked_at": "2026-11-13T13:45:58Z"
+    "response_ms": 601,
+    "checked_at": "2026-11-14T12:50:06Z"
   },
   "chucknorris": {
     "status": "up",
     "http_status": 200,
-    "response_ms": 652,
-    "checked_at": "2026-11-13T13:45:58Z"
+    "response_ms": 669,
+    "checked_at": "2026-11-14T12:50:06Z"
   },
   "official-joke-api": {
     "status": "down",
     "http_status": 503,
-    "response_ms": 84,
-    "checked_at": "2026-11-13T13:45:58Z"
+    "response_ms": 117,
+    "checked_at": "2026-11-14T12:50:06Z"
   },
   "advice-slip": {
     "status": "up",
     "http_status": 200,
-    "response_ms": 513,
-    "checked_at": "2026-11-13T13:45:58Z"
+    "response_ms": 494,
+    "checked_at": "2026-11-14T12:50:06Z"
   },
   "zenquotes": {
     "status": "up",
     "http_status": 200,
-    "response_ms": 252,
-    "checked_at": "2026-11-13T13:45:58Z"
+    "response_ms": 206,
+    "checked_at": "2026-11-14T12:50:06Z"
   },
   "open-library": {
     "status": "up",
     "http_status": 200,
-    "response_ms": 320,
-    "checked_at": "2026-11-13T13:45:58Z"
+    "response_ms": 189,
+    "checked_at": "2026-11-14T12:50:06Z"
   },
   "itunes-search": {
     "status": "up",
     "http_status": 200,
-    "response_ms": 217,
-    "checked_at": "2026-11-13T13:45:58Z"
+    "response_ms": 247,
+    "checked_at": "2026-11-14T12:50:06Z"
   },
   "wikipedia-api": {
     "status": "up",
     "http_status": 200,
-    "response_ms": 174,
-    "checked_at": "2026-11-13T13:45:58Z"
+    "response_ms": 188,
+    "checked_at": "2026-11-14T12:50:06Z"
   },
   "wikidata-sparql": {
     "status": "up",
     "http_status": 200,
-    "response_ms": 2511,
-    "checked_at": "2026-11-13T13:45:58Z"
+    "response_ms": 283,
+    "checked_at": "2026-11-14T12:50:06Z"
   },
   "hacker-news": {
     "status": "up",
     "http_status": 200,
-    "response_ms": 155,
-    "checked_at": "2026-11-13T13:45:58Z"
+    "response_ms": 1871,
+    "checked_at": "2026-11-14T12:50:06Z"
   },
   "randomuser": {
     "status": "up",
     "http_status": 200,
-    "response_ms": 133,
-    "checked_at": "2026-11-13T13:45:58Z"
+    "response_ms": 144,
+    "checked_at": "2026-11-14T12:50:06Z"
   },
   "bored-api": {
     "status": "up",
     "http_status": 200,
-    "response_ms": 239,
-    "checked_at": "2026-11-13T13:45:58Z"
+    "response_ms": 265,
+    "checked_at": "2026-11-14T12:50:06Z"
   },
   "fruityvice": {
     "status": "up",
     "http_status": 200,
-    "response_ms": 789,
-    "checked_at": "2026-11-13T13:45:58Z"
+    "response_ms": 704,
+    "checked_at": "2026-11-14T12:50:06Z"
   },
   "agify": {
     "status": "up",
     "http_status": 200,
-    "response_ms": 683,
-    "checked_at": "2026-11-13T13:45:58Z"
+    "response_ms": 377,
+    "checked_at": "2026-11-14T12:50:06Z"
   },
   "genderize": {
     "status": "up",
     "http_status": 200,
-    "response_ms": 448,
-    "checked_at": "2026-11-13T13:45:58Z"
+    "response_ms": 393,
+    "checked_at": "2026-11-14T12:50:06Z"
   },
   "nationalize": {
     "status": "up",
     "http_status": 200,
-    "response_ms": 453,
-    "checked_at": "2026-11-13T13:45:58Z"
+    "response_ms": 392,
+    "checked_at": "2026-11-14T12:50:06Z"
   },
   "thesportsdb": {
     "status": "down",
     "http_status": 403,
-    "response_ms": 68,
-    "checked_at": "2026-11-13T13:45:58Z"
+    "response_ms": 83,
+    "checked_at": "2026-11-14T12:50:06Z"
   },
   "citybikes": {
     "status": "up",
     "http_status": 200,
-    "response_ms": 660,
-    "checked_at": "2026-11-13T13:45:58Z"
+    "response_ms": 630,
+    "checked_at": "2026-11-14T12:50:06Z"
   },
   "tfl-line-status": {
     "status": "up",
     "http_status": 200,
-    "response_ms": 224,
-    "checked_at": "2026-11-13T13:45:58Z"
+    "response_ms": 222,
+    "checked_at": "2026-11-14T12:50:06Z"
   },
   "opensky-network": {
     "status": "up",
     "http_status": 200,
-    "response_ms": 503,
-    "checked_at": "2026-11-13T13:45:58Z"
+    "response_ms": 505,
+    "checked_at": "2026-11-14T12:50:06Z"
   },
   "met-museum": {
     "status": "up",
     "http_status": 200,
-    "response_ms": 224,
-    "checked_at": "2026-11-13T13:45:58Z"
+    "response_ms": 482,
+    "checked_at": "2026-11-14T12:50:06Z"
   },
   "art-institute-chicago": {
     "status": "up",
     "http_status": 200,
-    "response_ms": 506,
-    "checked_at": "2026-11-13T13:45:58Z"
+    "response_ms": 451,
+    "checked_at": "2026-11-14T12:50:06Z"
   },
   "github-api": {
     "status": "up",
     "http_status": 200,
-    "response_ms": 163,
-    "checked_at": "2026-11-13T13:45:58Z"
+    "response_ms": 283,
+    "checked_at": "2026-11-14T12:50:06Z"
   },
   "gitlab-api": {
     "status": "up",
     "http_status": 200,
-    "response_ms": 275,
-    "checked_at": "2026-11-13T13:45:58Z"
+    "response_ms": 253,
+    "checked_at": "2026-11-14T12:50:06Z"
   },
   "npm-registry": {
     "status": "up",
     "http_status": 200,
-    "response_ms": 74,
-    "checked_at": "2026-11-13T13:45:58Z"
+    "response_ms": 101,
+    "checked_at": "2026-11-14T12:50:06Z"
   },
   "pypi-json": {
     "status": "up",
     "http_status": 200,
-    "response_ms": 27,
-    "checked_at": "2026-11-13T13:45:58Z"
+    "response_ms": 34,
+    "checked_at": "2026-11-14T12:50:06Z"
   },
   "cratesio": {
     "status": "up",
     "http_status": 200,
-    "response_ms": 138,
-    "checked_at": "2026-11-13T13:45:58Z"
+    "response_ms": 336,
+    "checked_at": "2026-11-14T12:50:06Z"
   },
   "deezer": {
     "status": "up",
     "http_status": 200,
-    "response_ms": 305,
-    "checked_at": "2026-11-13T13:45:58Z"
+    "response_ms": 340,
+    "checked_at": "2026-11-14T12:50:06Z"
   },
   "musicbrainz": {
     "status": "up",
     "http_status": 200,
-    "response_ms": 2809,
-    "checked_at": "2026-11-13T13:45:58Z"
+    "response_ms": 773,
+    "checked_at": "2026-11-14T12:50:06Z"
   },
   "lyrics-ovh": {
     "status": "up",
     "http_status": 200,
-    "response_ms": 747,
-    "checked_at": "2026-11-13T13:45:58Z"
+    "response_ms": 701,
+    "checked_at": "2026-11-14T12:50:06Z"
   },
   "xkcd": {
     "status": "up",
     "http_status": 200,
-    "response_ms": 93,
-    "checked_at": "2026-11-13T13:45:58Z"
+    "response_ms": 556,
+    "checked_at": "2026-11-14T12:50:06Z"
   },
   "thecocktaildb": {
     "status": "up",
     "http_status": 200,
-    "response_ms": 361,
-    "checked_at": "2026-11-13T13:45:58Z"
+    "response_ms": 373,
+    "checked_at": "2026-11-14T12:50:06Z"
   },
   "themealdb": {
     "status": "up",
     "http_status": 200,
-    "response_ms": 234,
-    "checked_at": "2026-11-13T13:45:58Z"
+    "response_ms": 251,
+    "checked_at": "2026-11-14T12:50:06Z"
   },
   "deck-of-cards": {
     "status": "up",
     "http_status": 200,
-    "response_ms": 417,
-    "checked_at": "2026-11-13T13:45:58Z"
+    "response_ms": 214,
+    "checked_at": "2026-11-14T12:50:06Z"
   },
   "opentdb": {
     "status": "up",
     "http_status": 200,
-    "response_ms": 322,
-    "checked_at": "2026-11-13T13:45:58Z"
+    "response_ms": 302,
+    "checked_at": "2026-11-14T12:50:06Z"
   },
   "studio-ghibli": {
     "status": "up",
     "http_status": 200,
-    "response_ms": 186,
-    "checked_at": "2026-11-13T13:45:58Z"
+    "response_ms": 203,
+    "checked_at": "2026-11-14T12:50:06Z"
   },
   "rick-and-morty": {
     "status": "up",
     "http_status": 200,
-    "response_ms": 142,
-    "checked_at": "2026-11-13T13:45:58Z"
+    "response_ms": 160,
+    "checked_at": "2026-11-14T12:50:06Z"
   },
   "swapi": {
     "status": "up",
     "http_status": 200,
-    "response_ms": 143,
-    "checked_at": "2026-11-13T13:45:58Z"
+    "response_ms": 111,
+    "checked_at": "2026-11-14T12:50:06Z"
   },
   "hp-api": {
     "status": "down",
     "http_status": 503,
-    "response_ms": 241,
-    "checked_at": "2026-11-13T13:45:58Z"
+    "response_ms": 247,
+    "checked_at": "2026-11-14T12:50:06Z"
   },
   "nager-date": {
     "status": "up",
     "http_status": 200,
-    "response_ms": 43,
-    "checked_at": "2026-11-13T13:45:58Z"
+    "response_ms": 209,
+    "checked_at": "2026-11-14T12:50:06Z"
   },
   "free-dictionary": {
     "status": "up",
     "http_status": 200,
-    "response_ms": 127,
-    "checked_at": "2026-11-13T13:45:58Z"
+    "response_ms": 195,
+    "checked_at": "2026-11-14T12:50:06Z"
   },
   "color-api": {
     "status": "up",
     "http_status": 200,
-    "response_ms": 303,
-    "checked_at": "2026-11-13T13:45:58Z"
+    "response_ms": 264,
+    "checked_at": "2026-11-14T12:50:06Z"
   },
   "ipinfo": {
     "status": "up",
     "http_status": 200,
-    "response_ms": 86,
-    "checked_at": "2026-11-13T13:45:58Z"
+    "response_ms": 66,
+    "checked_at": "2026-11-14T12:50:06Z"
   },
   "data-gov-sg-weather": {
     "status": "up",
     "http_status": 200,
-    "response_ms": 657,
-    "checked_at": "2026-11-13T13:45:58Z"
+    "response_ms": 672,
+    "checked_at": "2026-11-14T12:50:06Z"
   },
   "statcan": {
     "status": "up",
     "http_status": 200,
-    "response_ms": 326,
-    "checked_at": "2026-11-13T13:45:58Z"
+    "response_ms": 347,
+    "checked_at": "2026-11-14T12:50:06Z"
   },
   "canada-open-data": {
     "status": "up",
     "http_status": 200,
-    "response_ms": 405,
-    "checked_at": "2026-11-13T13:45:58Z"
+    "response_ms": 427,
+    "checked_at": "2026-11-14T12:50:06Z"
   },
   "postcodes-io": {
     "status": "up",
     "http_status": 200,
-    "response_ms": 84,
-    "checked_at": "2026-11-13T13:45:58Z"
+    "response_ms": 91,
+    "checked_at": "2026-11-14T12:50:06Z"
   },
   "catfact-ninja": {
     "status": "up",
     "http_status": 200,
-    "response_ms": 287,
-    "checked_at": "2026-11-13T13:45:58Z"
+    "response_ms": 306,
+    "checked_at": "2026-11-14T12:50:06Z"
   },
   "kanye-rest": {
     "status": "up",
     "http_status": 200,
-    "response_ms": 112,
-    "checked_at": "2026-11-13T13:45:58Z"
+    "response_ms": 109,
+    "checked_at": "2026-11-14T12:50:06Z"
   },
   "bacon-ipsum": {
     "status": "up",
     "http_status": 200,
-    "response_ms": 383,
-    "checked_at": "2026-11-13T13:45:58Z"
+    "response_ms": 344,
+    "checked_at": "2026-11-14T12:50:06Z"
   },
   "universities-list": {
     "status": "up",
     "http_status": 200,
-    "response_ms": 207,
-    "checked_at": "2026-11-13T13:45:58Z"
+    "response_ms": 199,
+    "checked_at": "2026-11-14T12:50:06Z"
   }
 }
